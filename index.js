@@ -29,7 +29,24 @@ function getRandomArbitrary(min, max) {
 
 console.log(Math.ceil(getRandomArbitrary(100000, 999999)));
 
-for (const i in [...Array(10).keys()]) {
-  r = Math.ceil(getRandomArbitrary(100000, 999999));
-  console.log(i + " => " + r);
-}
+// for (const i in [...Array(10).keys()]) {
+//   r = Math.ceil(getRandomArbitrary(100000, 999999));
+//   console.log(i + " => " + r);
+// }
+
+let count = 0;
+const int1 = setInterval(() => {
+  if (count === 10) {
+    clearInterval(int);
+  } else {
+    console.log(
+      `${++count} => ${Math.ceil(getRandomArbitrary(100000, 999999))}`
+    );
+  }
+}, 500);
+
+let arrNum = [1, 2, 3, 4];
+console.log(arrNum.pop());
+console.log(arrNum.pop());
+console.log(arrNum.pop());
+console.log(arrNum.pop());
