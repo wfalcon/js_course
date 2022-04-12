@@ -50,4 +50,4 @@ console.log(arrNum.pop());
 console.log(arrNum.pop());
 console.log(arrNum.pop());
 console.log(arrNum.pop());
-// test
+
